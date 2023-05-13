@@ -1,0 +1,22 @@
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(11,39,66);
+  padding: 50px 165px;
+  gap: 20px;
+}
+
+.section {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}

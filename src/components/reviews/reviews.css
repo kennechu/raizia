@@ -1,0 +1,38 @@
+.container-review {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  flex-direction: column;
+  padding: 50px 165px;
+  gap: 50px;
+}
+
+.data-review {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #eaeaea;
+  margin: 20px auto;
+  border: 1px solid #6f6c6c;
+  border-radius: 40px;
+  padding: 40px;
+  gap: 30px;
+}
+
+.chip-review {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.chips {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}

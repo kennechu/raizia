@@ -1,0 +1,119 @@
+[
+  {
+    "name": "Daniela Renovato",
+    "presentation": "Hola, tengo amplia experiencia en el mercado inmobiliario. Me encantaría ayudarte a encontrar el inmueble perfecto para ti y tu familia.",
+    "avatar": "https://i.pravatar.cc/150?img=32",
+    "importants": [
+      {
+        "time": 5,
+        "description": "Años de experiencia"
+      },
+      {
+        "time": 7,
+        "description": "Transacciones cerradas en los últimos 3 meses"
+      }
+    ],
+    "social": {
+      "facebook": "daniela.renovato",
+      "instagram": "daniela_renovato",
+      "linkedin": "daniela-renovato",
+      "blog": "danielarenovato.com"
+    },
+    "zones": [
+      "Anahuac",
+      "Polanco",
+      "Condesa",
+      "Roma",
+      "Narvarte",
+      "Del Valle"
+    ],
+    "career": [
+      {
+        "name": "Licenciatura en Administración de Empresas",
+        "school": "Universidad Anahuac"
+      },
+      {
+        "name": "Maestría en Administración de Empresas",
+        "school": "Universidad Anahuac"
+      }
+    ]
+  },
+  {
+    "name": "Jorge Sánchez",
+    "presentation": "Hola, lo más importante para mí es que encuentres el inmueble que estás buscando.",
+    "avatar": "https://i.pravatar.cc/150?img=51",
+    "importants": [
+      {
+        "time": 20,
+        "description": "Años de experiencia"
+      },
+      {
+        "time": 80,
+        "description": "Inmuebles vendidos en los últimos 3 meses"
+      }
+    ],
+    "social": {
+      "facebook": "jorge.sanchez",
+      "blog": "www.jorgesanchez.com",
+      "linkedin": "jorge-sanchez",
+      "instagram": "jorge_sanchez"
+    },
+    "zones": [
+      "Acapulco",
+      "Cancún",
+      "Playa del Carmen",
+      "Tulum",
+      "Puerto Morelos",
+      "Cozumel"
+    ],
+    "career": [
+      {
+        "name": "Posgrado en Valuación Inmobiliaria",
+        "school": "Universidad de Guadalajara"
+      },
+      {
+        "name": "Licenciatura en Contaduría",
+        "school": "Teconológico de Monterrey"
+      }
+    ]
+  },
+  {
+    "name": "María González",
+    "presentation": "Hola, soy María Fernanda, me encantaría ayudarte a encontrar el inmueble que estás buscando.",
+    "avatar": "https://i.pravatar.cc/150?img=28",
+    "importants": [
+      {
+        "time": 10,
+        "description": "Años de experiencia"
+      },
+      {
+        "time": 50,
+        "description": "Inmuebles vendidos en los últimos 3 meses"
+      }
+    ],
+    "social": {
+      "facebook": "fernanda.gonzalez",
+      "blog": "mafergonzalez.com",
+      "linkedin": "maria-fgonzalez",
+      "instagram": "maria_fgonzalez"
+    },
+    "zones": [
+      "Nueva York",
+      "Miami",
+      "Los Ángeles",
+      "San Francisco",
+      "Chicago",
+      "Las Vegas"
+    ],
+    "career": [
+      {
+        "name": "Posgrado en ventas",
+        "school": "Teconológico de Monterrey"
+      },
+      {
+        "name": "Licenciatura en relaciones internacionales",
+        "school": "Universidad de Puebla"
+      }
+    ]
+  }
+]
