@@ -23,11 +23,11 @@ const Select = ({ setType }: { setType: (args: string) => void }) => {
     setType(title)
   }
   return (
-    <div className='flex flex-col items-center justify-center'>
+    <>
       <Typography variant='h4' color='black' fontWeight={600}>
         ¿Qué deseas hacer?
       </Typography>
-      <div className='flex flex-row gap-6 justify-center items-center mt-14'>
+      <div className='flex flex-row gap-10 h-full justify-center items-center'>
         {options.map(option => (
           <div
             key={option.title}
@@ -45,7 +45,7 @@ const Select = ({ setType }: { setType: (args: string) => void }) => {
           </div>
         ))}
       </div>
-    </div>
+    </>
   )
 }
 

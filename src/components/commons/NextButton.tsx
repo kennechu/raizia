@@ -1,22 +1,24 @@
 import { Button } from '@mui/material'
 import { ArrowForward, ArrowBack } from '@mui/icons-material'
+import { Link } from 'wouter'
 
 interface NextButtonProps {
   forward: () => void
   back: () => void
   current: number
   size: number
+  last?: boolean
 }
 
-const NextButton: React.FC<NextButtonProps> = ({ size, forward, back, current }) => {
+const NextButton: React.FC<NextButtonProps> = ({ size, forward, back, current, last = false }) => {
   return (
     <div className='flex items-center justify-between w-9/12 mt-14'>
       <Button variant='outlined' size='large' color='secondary' onClick={() => back()}>
         <ArrowBack />
-        Regresar
+        {current > size ? 'Volver al inicio' : 'Regresar'}
       </Button>
       {
-        size > 1 && (
+        (size > 1) && (current < size) && (
           <div className='flex items-center justify-center gap-2'>
             {
               Array.from(Array(size).keys()).map((value) => (
@@ -30,8 +32,21 @@ const NextButton: React.FC<NextButtonProps> = ({ size, forward, back, current })
         )
       }
       <Button variant='contained' color='primary' size='large' onClick={forward}>
-        Continuar
-        <ArrowForward />
+        {
+          last ? (
+            <Link to='/brokers' className='text-white'>
+              <a>
+                Continuar
+                <ArrowForward />
+              </a>
+            </Link>
+          ) : (
+            <>
+              Continuar
+              <ArrowForward />
+            </>
+          )
+        }
       </Button>
     </div>
   )

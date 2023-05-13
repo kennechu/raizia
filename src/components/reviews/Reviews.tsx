@@ -1,5 +1,6 @@
 import { Button, Divider, Grid, Typography } from '@mui/material'
 import './reviews.css'
+import { Link } from 'wouter'
 
 const Reviews = () => {
   const data = [{
@@ -44,11 +45,13 @@ const Reviews = () => {
           </Button>
         </Grid>
         <Grid>
-          <Button variant='outlined' color='secondary' size='large' style={{ padding: '15px 30px' }}>
-            <Typography variant='subtitle1' fontWeight={600}>
-              Encuentra a tu asesor
-            </Typography>
-          </Button>
+          <Link href='/login'>
+            <Button variant='outlined' color='secondary' size='large' style={{ padding: '15px 30px' }}>
+              <Typography variant='subtitle1' fontWeight={600}>
+                Encuentra a tu asesor
+              </Typography>
+            </Button>
+          </Link>
         </Grid>
       </Grid>
 

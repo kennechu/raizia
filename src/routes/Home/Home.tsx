@@ -20,17 +20,11 @@ const Home = () => (
           <a className='ml-10 hover:scale-105 transition duration-300 ease-in-out text-xl' href='#about-us'>¿Cómo sé que es seguro?</a>
         </section>
         <section className='secondSection'>
+          <Button variant='outlined' color='inherit' size='large'>REGISTRARSE COMO ASESOR</Button>
           <Link href='/login'>
-            <a>
-              <Button variant='outlined' color='inherit' size='large'>REGISTRARSE COMO ASESOR</Button>
-            </a>
-          </Link>
-          <Link href='/login'>
-            <a>
-              <Button variant='contained' color='primary' size='large'>
-                ENCUENTRA A TU ASESOR
-              </Button>
-            </a>
+            <Button variant='contained' color='primary' size='large'>
+              ENCUENTRA A TU ASESOR
+            </Button>
           </Link>
         </section>
       </header>
