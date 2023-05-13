@@ -74,7 +74,9 @@ const Binnacle = () => {
     <div className='content'>
       <div className=" flex flex-col w-full bg-white p-12 gap-9 h-screen">
         <Link href='/'>
-          <RaiziaLogo color="#000" width="120px" />
+          <a>
+            <RaiziaLogo color="#000" width="120px" />
+          </a>
         </Link>
         <section className='flex flex-col bg-[#0B2742] w-fit gap-2 pl-12 py-5 pr-6 -ml-12'>
           <Typography variant='h5' color='white' fontWeight={700}>
