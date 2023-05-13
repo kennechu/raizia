@@ -28,7 +28,7 @@ const Accept = () => {
           </div>
         </div>
       </div>
-      <Link href='/'>
+      <Link href='/binnacle'>
         <Button variant='contained' color='primary' size='large'>
           Ir a la bitacora de progreso
         </Button>

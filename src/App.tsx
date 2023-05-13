@@ -7,6 +7,7 @@ import Agreements from './routes/agreements/Agreements'
 import './App.css'
 import Accept from './routes/accept/Accept'
 import { UserProvider } from './context/userContext'
+import Binnacle from './routes/binnacle/Binnacle'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Route path='/brokers'><Brokers /></Route>
       <Route path='/agreements'><Agreements /></Route>
       <Route path='/accept'><Accept /></Route>
+      <Route path='/binnacle'><Binnacle /></Route>
     </UserProvider>
   )
 }
