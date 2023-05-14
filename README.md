@@ -7,5 +7,5 @@ Prototipo de la plataforma Raizia
 
 `npm run dev` 
 
-## Web page
+## Demo
 [Raizia](https://raizia-ui.vercel.app/)
