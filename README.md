@@ -9,4 +9,4 @@ Prototipo de la plataforma Raizia
 
 ## Demo
 [Raizia v1](https://raizia-ui.vercel.app/)
-[Raizia v2](https://raizia-dusky.vercel.app/)
+[Raizia v2](https://raizia-uely.vercel.app/)
