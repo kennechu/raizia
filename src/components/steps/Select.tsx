@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import { Typography } from '@mui/material'
 import { sell, buy, snb } from '../../utils/images'
 
 const Select = ({ setType }: { setType: (args: string) => void }) => {

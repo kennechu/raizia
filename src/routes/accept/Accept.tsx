@@ -1,4 +1,4 @@
-import { Button, Typography } from "@mui/material"
+import { Button } from "@mui/material"
 import FooterSteps from "../../components/footer/FooterSteps"
 import { Link } from "wouter"
 import users from '../../__mocks__/users.json'
