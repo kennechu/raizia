@@ -18,8 +18,8 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "baseUrl": "./",
+    "baseUrl": ".",
   },
-  "include": ["src", "./.eslintrc.cjs"],
+  "include": ["src/**/*.ts", "./.eslintrc.cjs", ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
