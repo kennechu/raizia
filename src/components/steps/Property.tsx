@@ -1,34 +1,39 @@
 import { useState } from 'react'
 import * as images from '../../utils/images'
-import { Typography } from '@mui/material'
 
 const Property = () => {
-  const [selected, setSelected] = useState('')
+  const [selected, setSelected] = useState<number | null>(null)
   return (
-    <>
-      <Typography variant='h4' color='black' fontWeight={600}>
+    <div className='flex flex-col items-center justify-center p-5 gap-10 max-w-lg'>
+      <h3 className='font-bold text-4xl'>
         ¿Qué tipo de inmbueble es?
-      </Typography>
-      <div className='flex flex-row gap-10 h-full justify-center items-center'>
-        <div className={`action-container ${selected === 'casa' ? 'selected' : ''}`} onClick={() => setSelected('casa')}>
-          <img src={images.house} alt='house' />
-          <h3 className='button-house'>casa</h3>
-        </div>
-        <div className={`action-container ${selected === 'Departamento' ? 'selected' : ''}`} onClick={() => setSelected('Departamento')}>
-          <img src={images.depa} alt='depa' />
-          <h3 className='button-house'>Departamento</h3>
-        </div>
-        <div className={`action-container ${selected === 'Casa con uso de suelo' ? 'selected' : ''}`} onClick={() => setSelected('Casa con uso de suelo')}>
-          <img src={images.another} alt='depa' />
-          <h3 className='button-house'>Casa con uso de suelo</h3>
-        </div>
-        <div className={`action-container ${selected === 'Casa en condominio' ? 'selected' : ''}`} onClick={() => setSelected('Casa en condominio')}>
-          <img src={images.house3} alt='depa' />
-          <h3 className='button-house'>Casa en condominio</h3>
+      </h3>
+      <div className=''>
+        <div className='grid grid-cols-2 xl:flex xl:flex-row'>
+          <>
+            <div className={`flex flex-col gap-2 justify-center items-center hover:scale-105 grayscale hover:grayscale-0 transition duration-300 ease-in-out ${selected === 0 ? 'grayscale-0' : ''}`} onClick={() => setSelected(0)}>
+              <img src={images.house} alt='house' />
+            </div>
+            <div className={`flex flex-col gap-2 justify-center items-center hover:scale-105 grayscale hover:grayscale-0 transition duration-300 ease-in-out ${selected === 1 ? 'grayscale-0' : ''}`} onClick={() => setSelected(1)}>
+              <img src={images.depa} alt='depa' />
+            </div>
+          </>
+          <>
+            <div className={`flex flex-col gap-2 justify-center items-center hover:scale-105 grayscale hover:grayscale-0 transition duration-300 ease-in-out ${selected === 2 ? 'grayscale-0' : ''}`} onClick={() => setSelected(2)}>
+              <img src={images.another} alt='depa' />
+            </div>
+            <div className={`flex flex-col gap-2 justify-center xs:flex items-center hover:scale-105 grayscale hover:grayscale-0 transition duration-300 ease-in-out ${selected === 3 ? 'grayscale-0' : ''}`} onClick={() => setSelected(3)}>
+              <img src={images.house3} alt='depa' />
+            </div>
+          </>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
 export default Property
+
+
+
+

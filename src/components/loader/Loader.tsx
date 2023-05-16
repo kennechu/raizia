@@ -3,7 +3,7 @@ import { loader } from '../../utils/images'
 
 const Loader = () => {
   return (
-    <div className='flex flex-col justify-center items-center gap-10'>
+    <div className='flex flex-col justify-center items-center gap-10 h-screen px-12 text-center'>
       <div className='flex flex-col gap-4 justify-center items-center'>
         <Typography variant='h4' color='gray' fontWeight={600}>
           Buscando el mejor broker para ti

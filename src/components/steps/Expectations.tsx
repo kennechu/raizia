@@ -16,8 +16,8 @@ const Expectations = () => {
         Expectativas
       </Typography>
       <div className='flex flex-row gap-10 h-full justify-center items-center'>
-        <div className='grid grid-cols-2 gap-x-8'>
-          <div className='flex flex-col gap-4 py-4 px-5 justify-center items-center text-center'>
+        <div className='grid grid-cols-2 xl:gap-x-8'>
+          <div className='flex flex-col gap-4 py-4 px-5 justify-start text-center'>
             <Typography variant='h6' color='gray' fontWeight={600}>
               ¿Cuánto tiempo esperas vender tu propiedad?
             </Typography>
@@ -38,7 +38,7 @@ const Expectations = () => {
             <Typography variant='h6' color='gray' fontWeight={600}>
               ¿Cuánto esperas por ella?
             </Typography>
-            <div className='flex flex-row gap-2 justify-center items-center'>
+            <div className='flex xl:flex-row flex-col gap-2 justify-center items-center'>
               <Typography variant='h6' color='gray' fontWeight={600}>
                 Entre
               </Typography>

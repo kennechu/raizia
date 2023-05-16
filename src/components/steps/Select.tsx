@@ -24,9 +24,9 @@ const Select = ({ setType }: { setType: (args: string) => void }) => {
   }
   return (
     <>
-      <Typography variant='h4' color='black' fontWeight={600}>
+      <h3 className='font-bold text-4xl'>
         ¿Qué deseas hacer?
-      </Typography>
+      </h3>
       <div className='flex flex-row gap-10 h-full justify-center items-center'>
         {options.map(option => (
           <div

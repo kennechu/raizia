@@ -3,7 +3,7 @@ import { policy } from '../../utils/images'
 
 const Policy = () => {
   return (
-    <div className="flex flex-col justify-center items-center gap-6">
+    <div className="flex flex-col justify-center items-center gap-6 px-12 xl:px-0">
       <Typography variant='h4' color='black' fontWeight={500}>
         Antes de continuar
       </Typography>

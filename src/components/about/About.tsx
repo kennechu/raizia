@@ -1,8 +1,6 @@
 import { useState } from 'react'
-import { Stack, Accordion, AccordionSummary, AccordionDetails, Grid, Typography } from '@mui/material'
+import { Accordion, AccordionSummary, AccordionDetails } from '@mui/material'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
-
-import './about.css'
 
 const About = ({ id }: { id: string }) => {
   const data = [{
@@ -61,50 +59,43 @@ const About = ({ id }: { id: string }) => {
   const [expanded, setExpanded] = useState('')
 
   return (
-    <div className='flex flex-col gap-y-12 py-14 px-40 bg-[#eaf3fa] items-center' id={id}>
-      <Typography fontWeight={600} style={{ color: 'rgb(11,39,66)', fontSize: '3rem', alignSelf: 'flex-start' }}>
+    <div className='flex flex-col gap-5 lg:gap-y-12 py-5 lg:py-14 px-2 lg:px-40 bg-[#eaf3fa] text-center sm:text-left' id={id}>
+      <h3 className='text-lg font-bold md:text-3xl'>
         CONOCE MÁS
-      </Typography>
-      <Grid container>
-        <Grid xs='auto' marginRight={5}>
-          <Stack className='buttons'>
-            {data.map((item) => (
-              <div className='content-button' key={item.button}>
-                <button
-                  className={selected.button === item.button ? 'button-selected' : 'button-select'}
-                  onClick={() => setSelected(item)}
-                >
-                  {item.button}
-                </button>
-              </div>
-            ))}
-          </Stack>
-        </Grid>
-        <Grid xs={7}>
-          <Stack>
-            {selected.accordions.map((accordion) => (
-              <Accordion
-                TransitionProps={{ unmountOnExit: true }}
-                key={accordion.title}
-                expanded={expanded === accordion.title}
-                onChange={() => setExpanded(expanded === accordion.title ? '' : accordion.title)}
-                variant='outlined'
+      </h3>
+      <div className='flex flex-col md:flex-row gap-10 max-w-6xl justify-center items-center md:items-start '>
+        <div className='bg-secondary-color rounded-lg p-5 w-2/3 md:py-12 md:px-8'>
+          {data.map((item) => (
+            <div className='content-button' key={item.button}>
+              <button
+                className={`text-white font-semibold py-5 px-4 text-base md:text-2xl rounded-sm w-full text-center lg:text-left ${selected.button === item.button ? 'bg-primary-color' : ''}`}
+                onClick={() => setSelected(item)}
               >
-                <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                  <Typography color='black' variant='h5'>
-                    {accordion.title}
-                  </Typography>
-                </AccordionSummary>
-                <AccordionDetails>
-                  <Typography color='black' variant='h6'>
-                    {accordion.content}
-                  </Typography>
-                </AccordionDetails>
-              </Accordion>
-            ))}
-          </Stack>
-        </Grid>
-      </Grid>
+                <span className={` ${selected.button === item.button ? 'text-secondary-color' : ''}`}>{item.button}</span>
+              </button>
+            </div>
+          ))}
+        </div>
+        <div className='w-full'>
+          {selected.accordions.map((accordion) => (
+            <Accordion
+              className=''
+              TransitionProps={{ unmountOnExit: true }}
+              key={accordion.title}
+              expanded={expanded === accordion.title}
+              onChange={() => setExpanded(expanded === accordion.title ? '' : accordion.title)}
+              variant='outlined'
+            >
+              <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                <span className='text-lg md:text-2xl font-bold'>{accordion.title}</span>
+              </AccordionSummary>
+              <AccordionDetails>
+                <span className='text-sm md:text-base'>{accordion.content}</span>
+              </AccordionDetails>
+            </Accordion>
+          ))}
+        </div>
+      </div>
     </div>
   )
 }

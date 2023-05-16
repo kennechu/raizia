@@ -1,4 +1,3 @@
-import { Typography } from '@mui/material'
 import { useState } from 'react'
 import Input from '../commons/Input'
 import { CheckCircleOutline } from '@mui/icons-material'
@@ -29,21 +28,21 @@ const Profile = () => {
 
   return (
     <>
-      <Typography variant='h4' color='black' fontWeight={600}>
+      <h3 className='font-bold text-4xl'>
         Completa tu perfil
-      </Typography>
-      <form className='flex flex-col min-w-full gap-4 mt-6'>
-        <Typography variant='h5' color='black' fontWeight={600}>
+      </h3>
+      <form className='flex flex-col min-w-full gap-4 mt-6 px-4 lg:px-0'>
+        <h3 className='font-bold text-xl'>
           Nombre completo*
-        </Typography>
+        </h3>
         <div className='flex flex-row gap-8  w-full'>
           <Input label='Nombre' />
           <Input label='Apellido' />
         </div>
         <div className='mt-6'>
-          <Typography variant='h5' color='black' fontWeight={600}>
+          <h3 className='font-bold text-xl'>
             Fecha de nacimiento*
-          </Typography>
+          </h3>
           <select className='bg-white border-gray-400 text-gray-500 py-3 px-7 mr-4 border-2 rounded-md text-lg'>
             <option value=''>Día</option>
             {Array.from(Array(31).keys()).map((day, index) => (
@@ -64,9 +63,9 @@ const Profile = () => {
           </select>
         </div>
         <div className='mt-6'>
-          <Typography variant='h5' color='black' fontWeight={600}>
+          <h3 className='font-bold text-xl'>
             Teléfono*
-          </Typography>
+          </h3>
           <div className='flex flex-row gap-4'>
             <select className='bg-white border-gray-400 text-gray-500 py-3 px-7 mr-1 border-2 rounded-md text-lg'>
               {ladas.map((lada, index) => (
@@ -76,7 +75,7 @@ const Profile = () => {
             <Input label='Numero' />
             <div className='flex flex-row w-4/12 justify-start items-center'>
               <button
-                className='text-green-500 hover:text-green-700  hover:border-green-700 py-2 px-4'
+                className='text-green-500 hover:text-green-700  hover:border-green-700 py-2 px-4 text-sm lg:text-base'
                 onClick={(e) => {
                   e.preventDefault()
                   setValidate(!validate)

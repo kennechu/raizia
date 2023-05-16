@@ -28,9 +28,9 @@ const Map = ({ type }: { type: string }) => {
 
   return (
     <>
-      <Typography variant='h4' color='black' fontWeight={600}>
+      <h3 className='font-bold text-4xl'>
         ¿En qué ubicación te gustaría {type}?
-      </Typography>
+      </h3>
       <div className='flex flex-col gap-3'>
         <Typography variant='h6' color='gray' fontWeight={600}>
           Dirección
@@ -58,7 +58,7 @@ const Map = ({ type }: { type: string }) => {
         {isLoaded && (
           <>
             <GoogleMap
-              mapContainerStyle={{ width: '50vw', height: '30vh' }}
+              mapContainerStyle={{ width: '100%', height: '30vh' }}
               zoom={15}
               center={getMapCenter(selectedCity)}
             >

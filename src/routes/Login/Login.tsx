@@ -1,4 +1,4 @@
-import { Button, Grid, Typography } from '@mui/material'
+import { Button } from '@mui/material'
 import { Link } from 'wouter'
 import loginImage from '../../assets/login.png'
 import './Login.css'
@@ -11,20 +11,18 @@ const Login = () => {
   }
 
   return (
-    <Grid container>
-      <Grid item xs={6}>
-        <div className='flex flex-col items-start p-16 bg-white h-full gap-8'>
+    <div className='flex flex-col lg:grid lg:grid-cols-2 '>
+      <div>
+        <div className='flex flex-col p-16 bg-white h-full gap-8 text-center'>
           <Link href='/'>
-            <a>
-              <RaiziaLogo width='200px' color='#4b4b4b' />
-            </a>
+            <RaiziaLogo width='120px' color='#4b4b4b' />
           </Link>
-          <Typography variant='h1' className='text-4xl font-bold text-center text-gray-700'>
+          <h3 className='text-3xl lg:text-5xl font-bold text-center text-gray-700'>
             ¡Bienvenido!
-          </Typography>
-          <Typography variant='h4' className='text-xl font-bold text-center text-gray-400'>
+          </h3>
+          <h3 className='text-xl lg:text-3xl font-bold text-center text-gray-600'>
             Crea una cuenta para comenzar.
-          </Typography>
+          </h3>
           <div className='w-full flex justify-center items-end'>
             <form className='flex flex-col justify-center items-center py-11 gap-10 w-full' onSubmit={handleSubmit}>
               <Input label='Correo electrónico' type='email' />
@@ -40,9 +38,9 @@ const Login = () => {
             <div className='flex w-full justify-center items-center'>
               <div className='w-9/12 h-[1px] bg-gray-300' />
               <div className='w-4/6'>
-                <Typography variant='h6' className='text-xl font-bold text-center text-gray-400'>
+                <h3 className='text-xl lg:text-xl font-bold text-center text-gray-600'>
                   o inicia sesión con
-                </Typography>
+                </h3>
               </div>
               <div className='w-9/12 h-[1px] bg-gray-300' />
             </div>
@@ -53,13 +51,13 @@ const Login = () => {
             </Link>
           </div>
         </div>
-      </Grid>
-      <Grid item xs={6}>
+      </div>
+      <div className='hidden lg:flex'>
         <div className='image-section'>
           <img src={loginImage} alt='' />
         </div>
-      </Grid>
-    </Grid>
+      </div>
+    </div>
   )
 }
 

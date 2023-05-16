@@ -15,7 +15,9 @@ const NextButton: React.FC<NextButtonProps> = ({ size, forward, back, current, l
     <div className='flex items-center justify-between w-9/12 mt-14'>
       <Button variant='outlined' size='large' color='secondary' onClick={() => back()}>
         <ArrowBack />
-        {current > size ? 'Volver al inicio' : 'Regresar'}
+        <p className='hidden xl:flex'>
+          {current > size ? 'Volver al inicio' : 'Regresar'}
+        </p>
       </Button>
       {
         (size > 1) && (current < size) && (
@@ -32,21 +34,14 @@ const NextButton: React.FC<NextButtonProps> = ({ size, forward, back, current, l
         )
       }
       <Button variant='contained' color='primary' size='large' onClick={forward}>
-        {
-          last ? (
-            <Link to='/brokers' className='text-white'>
-              <a>
-                Continuar
-                <ArrowForward />
-              </a>
-            </Link>
-          ) : (
-            <>
+        <Link to={last ? '/brokers' : '#'} className='text-white'>
+          <a className='flex flex-row'>
+            <p className='hidden xl:flex'>
               Continuar
-              <ArrowForward />
-            </>
-          )
-        }
+            </p>
+            <ArrowForward />
+          </a>
+        </Link>
       </Button>
     </div>
   )
