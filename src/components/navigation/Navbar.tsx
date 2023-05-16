@@ -62,7 +62,9 @@ const Navbar = () => {
                 <a className="block p-4 text-base font-semibold text-secondary-color hover:bg-blue-50 hover:text-blue-600 rounded" href='#about-us'>¿Cómo sé que es seguro?</a>
               </li>
               <li className="mb-1">
-                <a className="block p-4 text-base font-semibold text-secondary-color hover:bg-blue-50 hover:text-blue-600 rounded" href='/login'>Iniciar Sesión</a>
+                <Link href='/login'>
+                  <a className="block p-4 text-base font-semibold text-secondary-color hover:bg-blue-50 hover:text-blue-600 rounded">Iniciar Sesión</a>
+                </Link>
               </li>
             </ul>
           </div>
