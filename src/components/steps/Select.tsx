@@ -23,11 +23,11 @@ const Select = ({ setType }: { setType: (args: string) => void }) => {
     setType(title)
   }
   return (
-    <>
-      <h3 className='font-bold text-4xl'>
+    <div>
+      <h3 className='font-bold text-2xl'>
         ¿Qué deseas hacer?
       </h3>
-      <div className='flex flex-row gap-10 h-full justify-center items-center'>
+      <div className='flex flex-row gap-10 h-full justify-center items-center px-10'>
         {options.map(option => (
           <div
             key={option.title}
@@ -37,15 +37,15 @@ const Select = ({ setType }: { setType: (args: string) => void }) => {
             <img
               src={option.source}
               alt={option.title}
-              className='w-72 aspect-square object-contain'
+              className='w-72 aspect-square object-cover'
             />
-            <Typography variant='h6' color='black' fontWeight={600}>
+            <span className='font-bold text-center text-base xl:text-2xl'>
               {option.title}
-            </Typography>
+            </span>
           </div>
         ))}
       </div>
-    </>
+    </div>
   )
 }
 

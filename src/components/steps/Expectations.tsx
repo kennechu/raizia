@@ -11,13 +11,13 @@ const Expectations = () => {
     'Mas de un año'
   ]
   return (
-    <>
-      <Typography variant='h4' color='black' fontWeight={600}>
+    <div>
+      <h3 className='font-bold text-2xl'>
         Expectativas
-      </Typography>
-      <div className='flex flex-row gap-10 h-full justify-center items-center'>
+      </h3>
+      <div className='flex flex-row gap-10 h-full mt-10 justify-center items-center'>
         <div className='grid grid-cols-2 xl:gap-x-8'>
-          <div className='flex flex-col gap-4 py-4 px-5 justify-start text-center'>
+          <div className='flex flex-col gap-4 px-5 justify-start text-center'>
             <Typography variant='h6' color='gray' fontWeight={600}>
               ¿Cuánto tiempo esperas vender tu propiedad?
             </Typography>
@@ -34,30 +34,34 @@ const Expectations = () => {
               </Button>
             ))}
           </div>
-          <div className='flex flex-col gap-4 text-center'>
+          <div className='flex flex-col gap-4 text-center px-5 justify-center items-center '>
             <Typography variant='h6' color='gray' fontWeight={600}>
               ¿Cuánto esperas por ella?
             </Typography>
-            <div className='flex xl:flex-row flex-col gap-2 justify-center items-center'>
-              <Typography variant='h6' color='gray' fontWeight={600}>
-                Entre
-              </Typography>
-              <Input type='number' label='Precio minimo' />
-              <Typography variant='h6' color='gray' fontWeight={600}>
-                y
-              </Typography>
-              <Input type='number' label='Precio maximo' />
+            <div className='flex flex-col gap-2 justify-center items-start'>
+              <div className='flex flex-col xl:grid xl:grid-cols-2 w-full justify-between items-center'>
+                <span className='font-bold text-sm lg:text-base text-gray-500'>
+                  Expectativas
+                </span>
+                <Input type='number' label='Precio minimo' />
+              </div>
+              <div className='flex flex-col xl:grid xl:grid-cols-2 w-full justify-between items-center'>
+                <span className='font-bold text-sm lg:text-base text-gray-500'>
+                  y
+                </span>
+                <Input type='number' label='Precio maximo' />
+              </div>
             </div>
-            <div className='flex flex-row gap-4 justify-center items-center mt-10'>
+            <div className='flex flex-row gap-1 justify-center items-center mt-10'>
               <Checkbox color='secondary' />
-              <Typography variant='h6' color='gray' fontWeight={600}>
+              <span className='font-bold text-sm xl:text-xl text-gray-500'>
                 No estoy seguro necesito ayuda
-              </Typography>
+              </span>
             </div>
           </div>
         </div>
       </div>
-    </>
+    </div >
   )
 }
 

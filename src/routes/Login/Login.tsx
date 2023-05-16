@@ -35,18 +35,18 @@ const Login = () => {
             </form>
           </div>
           <div className='flex flex-col items-center gap-10 w-full'>
-            <div className='flex w-full justify-center items-center'>
-              <div className='w-9/12 h-[1px] bg-gray-300' />
-              <div className='w-4/6'>
-                <h3 className='text-xl lg:text-xl font-bold text-center text-gray-600'>
+            <div className='flex w-full justify-center items-center gap-3'>
+              <div className='flex  w-1/3 h-[1px] bg-gray-300' />
+              <div className='w-1/3'>
+                <h3 className='text-sm lg:text-xl font-bold text-center text-gray-600'>
                   o inicia sesión con
                 </h3>
               </div>
-              <div className='w-9/12 h-[1px] bg-gray-300' />
+              <div className='w-1/3 h-[1px] bg-gray-300' />
             </div>
             <Link href='/register'>
               <a className='w-full  flex justify-center items-center py-4 border-[1px] border-gray-300 rounded-lg'>
-                <GoogleLogo width='40px' />
+                <GoogleLogo width='30px' />
               </a>
             </Link>
           </div>

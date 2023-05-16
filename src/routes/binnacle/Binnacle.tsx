@@ -71,8 +71,8 @@ const Binnacle = () => {
   }
 
   return (
-    <div className='content'>
-      <div className=" flex flex-col w-full bg-white p-12 gap-9 h-screen">
+    <div className='flex flex-col gap-9 justify-center items-center h-fit xl:grid grid-cols-2'>
+      <div className="flex flex-col w-full bg-white p-12 gap-9">
         <Link href='/'>
           <a>
             <RaiziaLogo color="#000" width="120px" />
@@ -94,7 +94,7 @@ const Binnacle = () => {
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur adipisci, facere veritatis aliquid odio quasi sequi? Et, commodi. Laudantium, possimus illo! Error illum saepe et soluta, enim tempora incidunt sequi!
           </p>
         </section>
-        <div className="grid grid-cols-2 gap-9">
+        <div className="flex xl:grid xl:grid-cols-2 gap-9">
           <section className="flex flex-col gap-4">
             <Typography variant='h5' color='black' fontWeight={700}>
               ¿Qué papeles necesito?
@@ -108,7 +108,7 @@ const Binnacle = () => {
             </ul>
             <p className="text-base text-gray-800">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima provident nulla itaque voluptas, labore molestiae magnam, debitis recusandae tenetur suscipit voluptates dignissimos a quo hic incidunt? Consequatur itaque natus deserunt.</p>
           </section>
-          <img src={another} width='350px' />
+          <img src={another} width='350px' className='hidden xl:flex' />
         </div>
         <Divider color="black" />
         <p className="text-base text-gray-800">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora sequi iusto accusantium suscipit nihil magnam dolorum, laudantium rerum quo porro nesciunt non odio ullam impedit rem minima in labore repellat.</p>
@@ -118,7 +118,7 @@ const Binnacle = () => {
           </Button>
         </div>
       </div>
-      <div className='flex flex-col w-full px-16 py-12 gap-9'>
+      <div className='flex flex-col w-full h-full px-16 py-12 gap-9 bg-background-color'>
         <Typography variant='h5' color='black' fontWeight={700}>
           PROCESO DE VENTA
         </Typography>

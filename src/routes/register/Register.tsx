@@ -42,11 +42,11 @@ const Register = () => {
     <Policy key='step-7' />,
   ]
   return (
-    <div className='flex flex-col relative justify-start pt-16 md:justify-center items-center w-full h-screen'>
+    <div className='flex flex-col relative justify-between md:justify-around items-center w-full h-screen bg-white lg:bg-background-color'>
       {loading && <Loader />}
       {!loading && (
         <>
-          <div className='bg-white lg:py-16 lg:px-44 lg:w-8/12 h-4/6 lg:shadow-lg relative flex flex-col justify-center items-center'>
+          <div className='bg-white lg:py-16 lg:px-44 lg:w-8/12 h-5/6 lg:shadow-lg relative flex flex-col justify-center items-center text-center'>
             {renderStep[current - 1]}
             <NextButton size={6} current={current} forward={forward} back={back} last={last} />
           </div>

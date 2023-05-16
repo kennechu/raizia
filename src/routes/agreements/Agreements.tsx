@@ -1,4 +1,4 @@
-import { Button, Typography } from "@mui/material"
+import { Button } from "@mui/material"
 import FooterSteps from "../../components/footer/FooterSteps"
 import { login } from "../../utils/images"
 import { Link } from "wouter"
@@ -7,11 +7,11 @@ import { ArrowForward } from "@mui/icons-material"
 const Agreements = () => {
   return (
     <div className='flex flex-col w-full h-screen items-center justify-around'>
-      <div className='flex flex-col gap-5 bg-white w-3/4 shadow-md py-10 px-24 justify-center items-center'>
-        <Typography variant='h3' color='black' fontWeight={500} className='p-10'>
+      <div className='flex flex-col gap-5 bg-white w-full xl:w-3/4 xl:shadow-md py-10 px-24 justify-center items-center text-center'>
+        <h3 className='text-3xl font-bold xl:text-5xl py-3'>
           Acuerdos de comisión
-        </Typography>
-        <div className='grid grid-cols-2 place-content-center gap-10'>
+        </h3>
+        <div className=' flex flex-col xl:grid xl:grid-cols-2 place-content-center gap-10'>
           <div className="flex">
             <p className='text-gray-600'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum corporis praesentium recusandae architecto odio commodi alias ipsum, pariatur error magnam unde soluta totam voluptatibus labore accusamus adipisci debitis eius quod.</p>
           </div>

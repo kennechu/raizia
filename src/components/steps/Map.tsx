@@ -28,7 +28,7 @@ const Map = ({ type }: { type: string }) => {
 
   return (
     <>
-      <h3 className='font-bold text-4xl'>
+      <h3 className='font-bold text-2xl'>
         ¿En qué ubicación te gustaría {type}?
       </h3>
       <div className='flex flex-col gap-3'>
@@ -51,7 +51,7 @@ const Map = ({ type }: { type: string }) => {
           </select>
         </div>
         {!isLoaded && (
-          <div role="status" className="flex items-center justify-center h-[30vh] w-[50vw] bg-gray-300 rounded-lg animate-pulse dark:bg-gray-500">
+          <div role="status" className="flex items-center justify-center h-[30vh] w-full bg-gray-300 animate-pulse dark:bg-gray-500">
             <span className="sr-only">Loading...</span>
           </div>
         )}

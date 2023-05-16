@@ -15,10 +15,10 @@ const Info = () => {
     'EN LA DECADA DE LOS 70'
   ]
   return (
-    <>
-      <Typography variant='h4' color='black' fontWeight={600}>
+    <div>
+      <h3 className='font-bold text-2xl'>
         Información de la construcción
-      </Typography>
+      </h3>
       <div className='flex flex-row gap-10 h-full justify-center items-center'>
         <div className='grid grid-cols-2'>
           <div className='flex flex-col gap-4 py-4 px-5 justify-center items-center'>
@@ -65,7 +65,7 @@ const Info = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 

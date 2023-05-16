@@ -28,10 +28,10 @@ const Profile = () => {
 
   return (
     <>
-      <h3 className='font-bold text-4xl'>
+      <h3 className='font-bold text-2xl'>
         Completa tu perfil
       </h3>
-      <form className='flex flex-col min-w-full gap-4 mt-6 px-4 lg:px-0'>
+      <form className='flex flex-col min-w-full gap-4 mt-6 px-4 lg:px-0 text-left'>
         <h3 className='font-bold text-xl'>
           Nombre completo*
         </h3>
@@ -43,19 +43,19 @@ const Profile = () => {
           <h3 className='font-bold text-xl'>
             Fecha de nacimiento*
           </h3>
-          <select className='bg-white border-gray-400 text-gray-500 py-3 px-7 mr-4 border-2 rounded-md text-lg'>
+          <select className='bg-white border-gray-400 text-gray-500 py-3 px-7 mr-4 border-2 rounded-md text-sm lg:text-lg'>
             <option value=''>Día</option>
             {Array.from(Array(31).keys()).map((day, index) => (
               <option key={index} value={day + 1}>{day + 1}</option>
             ))}
           </select>
-          <select className='bg-white border-gray-400 text-gray-500 py-3 px-7 mr-4 border-2 rounded-md text-lg'>
+          <select className='bg-white border-gray-400 text-gray-500 py-3 px-7 mr-4 border-2 rounded-md text-sm lg:text-lg'>
             <option value=''>Mes</option>
             {meses.map((month, index) => (
               <option key={index} value={index + 1}>{month}</option>
             ))}
           </select>
-          <select className='bg-white border-gray-400 text-gray-500 py-3 px-7 mr-4 border-2 rounded-md text-lg'>
+          <select className='bg-white border-gray-400 text-gray-500 py-3 px-7 mr-4 border-2 rounded-md text-sm lg:text-lg'>
             <option value=''>Año</option>
             {Array.from(Array(50).keys()).map((year, index) => (
               <option key={index} value={year + 1970}>{year + 1970}</option>
@@ -67,7 +67,7 @@ const Profile = () => {
             Teléfono*
           </h3>
           <div className='flex flex-row gap-4'>
-            <select className='bg-white border-gray-400 text-gray-500 py-3 px-7 mr-1 border-2 rounded-md text-lg'>
+            <select className='bg-white border-gray-400 text-gray-500 px-5 mr-4 border-2 rounded-md text-sm lg:text-lg'>
               {ladas.map((lada, index) => (
                 <option key={index} value={lada.lada}>{lada.lada}</option>
               ))}
@@ -81,7 +81,7 @@ const Profile = () => {
                   setValidate(!validate)
                 }}
               >
-                {validate ? <CheckCircleOutline /> : 'Validar teléfono'}
+                {validate ? <CheckCircleOutline /> : 'Validar'}
               </button>
             </div>
           </div>
