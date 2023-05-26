@@ -8,4 +8,4 @@ Prototipo de la plataforma Raizia
 `npm run dev` 
 
 ## Demo
-[Raizia](https://raizia-uely.vercel.app/)
+[Raizia](https://raizia-ui.vercel.app/)
